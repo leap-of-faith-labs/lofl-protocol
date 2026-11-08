@@ -1,0 +1,125 @@
+{
+  "protocol": "lofl-protocol",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "28c8fbf3f2db38e3bf7636d8c69afd2195ce2a4edcd45930422f4f9a2347d826",
+      "bytes": 53,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "42aa3d8f19d4ebd6b970dba6f0c14a8dfc40716c6c6719730f576019d8c4658d",
+      "bytes": 569,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "CHARTER.md",
+      "sha256": "67322ed9fa552793c3b6d6410641bf5a356505c80d0b9788bc25d450150dac46",
+      "bytes": 3149,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "d60eadc5fd3ede8fe303c9ccadf9a29f6289767a58b2812046d28aada661f445",
+      "bytes": 490,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
+      "bytes": 20138,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "README.md",
+      "sha256": "dfe770006de7e1bed5c098140759312e8e7ebda817faca5f4e7d993b409cdc51",
+      "bytes": 2680,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "examples/README.md",
+      "sha256": "653cd6841d54c8dbc218ab764411cefa4b21d716ccc8b695feb0a3bb5dfc43ca",
+      "bytes": 926,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "examples/promise-m-2026-11.json",
+      "sha256": "559d9eb5bf0d5b0099cf21fc852c4a251711534e4fe1aacb7ebf22a6f595c3a2",
+      "bytes": 3002,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "schema/deliberation.schema.json",
+      "sha256": "a33a9ee2ac0890d247a57a263e211d8b99361fb8559ee16df497c7b25684767e",
+      "bytes": 978,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "schema/envelope.schema.json",
+      "sha256": "9cb9a7e5a99eba0aadf0c31246fafee04904977dfe1c9e0f597b2e0c976d969f",
+      "bytes": 1625,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "schema/evidence.schema.json",
+      "sha256": "7bda739c17b544173da2d6f4a21b975d4eae7f9141d1b671935a8a8a6f88018e",
+      "bytes": 1810,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "schema/promise.schema.json",
+      "sha256": "c511017c46468bc0672c3e36d319415023f61ee353a0db75b3511e0925edfbcd",
+      "bytes": 4231,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "spec/01-promise.md",
+      "sha256": "bea1fa768eb0a48fb8e9bc62add0fbc02629ce4c0577d68c7191fdeadad717fc",
+      "bytes": 4404,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "spec/02-evidence.md",
+      "sha256": "1232e23f56c969039f0f57c3e6e914c4609d7a26182f5525d21354288d1056f9",
+      "bytes": 2319,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "spec/03-deliberation.md",
+      "sha256": "b1c41d151e07ec4a080a5451f3fb2bd16ea2ffef4d4dce31fe1537806aed182e",
+      "bytes": 1209,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "spec/04-envelope.md",
+      "sha256": "5f68bd154492d01efe632a528ddcfdef6ccabcfd948206c210aa0e4e3505bf9c",
+      "bytes": 1899,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "tools/didkey.py",
+      "sha256": "dfa92a2147e2ed0ce2fd329846994dc5100ad240fda2745c019015aaabb77547",
+      "bytes": 6144,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "tools/hash.py",
+      "sha256": "858c903976bdd0a0db8f4561dd224b423e0a26e6ea73d394b8704875c33b69b9",
+      "bytes": 3248,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "tools/sign.py",
+      "sha256": "7bf8b7595d7cf05d56ae4baa380b7b26efc7b9ca89fbb89320fbf5742a0b01ab",
+      "bytes": 6648,
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "tools/validate.py",
+      "sha256": "f795de83627802764d98135021693bd0c5a3d0ee0e603f1d2e49abab4534aed7",
+      "bytes": 7430,
+      "license": "CC-BY-SA-4.0"
+    }
+  ]
+}

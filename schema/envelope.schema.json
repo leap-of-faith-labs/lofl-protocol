@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lofl.world/protocol/schema/envelope.schema.json",
+  "title": "LOFL record envelope v0.1",
+  "description": "Licence CC-BY-SA-4.0. Every LOFL record carries this under the key 'lofl'.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "id",
+    "created",
+    "license",
+    "provenance"
+  ],
+  "properties": {
+    "type": {
+      "enum": [
+        "promise",
+        "evidence",
+        "deliberation",
+        "sprint"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "parent": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2}(\\.\\d+)?)?(Z|[+-]\\d{2}:\\d{2})$"
+    },
+    "license": {
+      "const": "CC-BY-SA-4.0"
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sha256"
+      ],
+      "properties": {
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "by": {
+          "type": "string",
+          "pattern": "^did:"
+        }
+      }
+    },
+    "lang": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 2
+      }
+    },
+    "supersedes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "supersededBy": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "planned",
+        "running",
+        "completed"
+      ]
+    }
+  }
+}

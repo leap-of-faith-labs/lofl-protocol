@@ -1,0 +1,57 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "LOFLPromise"
+  ],
+  "id": "urn:uuid:a76725a2-fadd-4f52-a6a9-b66521e5156b",
+  "issuer": "did:key:z6MktpGyGWpWZd85PywCzmNynZs8C4LDCUvWxXYndzVunEzz",
+  "validFrom": "2026-11-08T13:29:58+05:30",
+  "credentialSubject": {
+    "id": "did:key:z6MktpGyGWpWZd85PywCzmNynZs8C4LDCUvWxXYndzVunEzz",
+    "claim": "I will change the LOFL protocol only by publishing a new version that supersedes the old one, and never edit a published version.",
+    "cycle": "2026-Q4",
+    "evidencePointer": {
+      "trace": "https://github.com/leap-of-faith-labs/lofl-protocol",
+      "sdg": [
+        "16.6",
+        "16.10",
+        "17.17"
+      ]
+    },
+    "selfDeliberation": {
+      "position": "People will build tools on this protocol. If I quietly change a version they rely on, their records break and they cannot trust any LOFL record again. And the protocol's own rule is: nothing is deleted, corrections supersede. If I do not keep that rule for the protocol itself, I cannot ask anyone else to keep it.",
+      "evidence": "Every file has a sha256 in ledger.json, and tools/hash.py --check shows any change. CHANGELOG.md and CONTRIBUTING.md already say: supersede, never edit. I already work this way in my vault, with dated notes and supersession instead of rewrites.",
+      "counter": "A new version for every typo is heavy: readers may face many tiny versions, and a small fix could take days. And v0.1 is a draft no one outside has read. Freezing it now may lock in mistakes that a quiet fix would have caught.",
+      "consensus": "Small fixes wait and go out together in the next version. Nothing published is ever edited, even for a typo.",
+      "dissent": "I am the only steward until the charter's trigger fires. If I break this promise, no one but readers of the git history would notice; no witness is asked yet. And a force-push can rewrite git history. The ledger hashes help, but until the records are anchored somewhere I do not control, 'never edited' rests partly on trust."
+    },
+    "supersedes": null
+  },
+  "lofl": {
+    "type": "promise",
+    "id": "urn:uuid:a76725a2-fadd-4f52-a6a9-b66521e5156b",
+    "created": "2026-11-08T13:29:58+05:30",
+    "license": "CC-BY-SA-4.0",
+    "lang": [
+      "en"
+    ],
+    "provenance": {
+      "by": "did:key:z6MktpGyGWpWZd85PywCzmNynZs8C4LDCUvWxXYndzVunEzz",
+      "sha256": "5f40a2c2b9f755c9c3fef49960322b34fe3aaa463d6a44ea243cbc34c1ba6825"
+    }
+  },
+  "proof": {
+    "type": "DataIntegrityProof",
+    "cryptosuite": "eddsa-jcs-2022",
+    "created": "2026-11-08T13:30:14+05:30",
+    "verificationMethod": "did:key:z6MktpGyGWpWZd85PywCzmNynZs8C4LDCUvWxXYndzVunEzz#z6MktpGyGWpWZd85PywCzmNynZs8C4LDCUvWxXYndzVunEzz",
+    "proofPurpose": "assertionMethod",
+    "@context": [
+      "https://www.w3.org/ns/credentials/v2"
+    ],
+    "proofValue": "z3BjgXGPWSMUgGeUndeUuCZfd5MdA9A3wxekoFykrLqhD5WT6EeGNdbJokfu33tN6ysKpcv8gqWrZkjtyRYHbkkBe"
+  }
+}

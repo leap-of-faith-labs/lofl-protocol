@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "LOFLPromise"
+  ],
+  "id": "urn:uuid:00000000-0000-4000-8000-000000000001",
+  "issuer": "did:key:z6MkrQYZvmVYmqSRDaQ9WXbXAmRsKZd5bPHL5hjG9ETgg3Hs",
+  "validFrom": "2026-10-24T18:00:00+05:30",
+  "credentialSubject": {
+    "id": "did:key:z6MkrQYZvmVYmqSRDaQ9WXbXAmRsKZd5bPHL5hjG9ETgg3Hs",
+    "claim": "SYNTHETIC: I will publish the protocol before showing the one-pager.",
+    "cycle": "2026-Q4",
+    "evidencePointer": {
+      "trace": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "irisNoun": "Organisations with improved practice documentation",
+      "sdg": [
+        "17.16",
+        "4.4"
+      ]
+    },
+    "selfDeliberation": {
+      "position": "SYNTHETIC — test only. Signed with a throwaway key that was deleted after signing.",
+      "evidence": "test",
+      "counter": "test",
+      "consensus": "test",
+      "dissent": "Not asked: anyone else. Synthetic record."
+    },
+    "supersedes": null
+  },
+  "lofl": {
+    "type": "promise",
+    "id": "urn:uuid:00000000-0000-4000-8000-000000000001",
+    "created": "2026-10-24T18:00:00+05:30",
+    "license": "CC-BY-SA-4.0",
+    "provenance": {
+      "sha256": "fd27d4dae3de68570d45f13e188de2fa059a4630b3795724048443755b131acb",
+      "by": "did:key:z6MkrQYZvmVYmqSRDaQ9WXbXAmRsKZd5bPHL5hjG9ETgg3Hs"
+    }
+  },
+  "proof": {
+    "type": "DataIntegrityProof",
+    "cryptosuite": "eddsa-jcs-2022",
+    "created": "2026-11-08T13:12:07+05:30",
+    "verificationMethod": "did:key:z6MkrQYZvmVYmqSRDaQ9WXbXAmRsKZd5bPHL5hjG9ETgg3Hs#z6MkrQYZvmVYmqSRDaQ9WXbXAmRsKZd5bPHL5hjG9ETgg3Hs",
+    "proofPurpose": "assertionMethod",
+    "@context": [
+      "https://www.w3.org/ns/credentials/v2"
+    ],
+    "proofValue": "z2W3VGYGayRPBxvzjXqg4eRMWPaNj2DqK4Zmt8CB6vDSQu4eereMiaM4kEgnWAwwFQnFAVFRVWydHV7t2hzZpq1QW"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lofl.world/protocol/schema/evidence.schema.json",
+  "title": "LOFL evidence record v0.1",
+  "description": "Licence CC-BY-SA-4.0. activity → evidence → verification → regeneration.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "lofl",
+    "activity",
+    "evidence",
+    "verification",
+    "regeneration"
+  ],
+  "properties": {
+    "lofl": {
+      "$ref": "envelope.schema.json"
+    },
+    "activity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "pointer",
+        "sha256"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "photo",
+            "file",
+            "log",
+            "attendance",
+            "artefact",
+            "link",
+            "other"
+          ]
+        },
+        "pointer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "level",
+        "by"
+      ],
+      "properties": {
+        "level": {
+          "enum": [
+            "L0",
+            "L1",
+            "L2",
+            "L3"
+          ]
+        },
+        "by": {
+          "type": "string",
+          "pattern": "^did:"
+        },
+        "promiseId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "framework": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "regeneration": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

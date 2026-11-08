@@ -1,0 +1,194 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lofl.world/protocol/schema/promise.schema.json",
+  "title": "LOFL promise v0.1",
+  "description": "Licence CC-BY-SA-4.0. A self-issued W3C Verifiable Credential about the issuer's own behaviour. Seven Core fields, all required.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "@context",
+    "type",
+    "id",
+    "issuer",
+    "validFrom",
+    "credentialSubject",
+    "proof",
+    "lofl"
+  ],
+  "properties": {
+    "@context": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "type": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "issuer": {
+      "type": "string",
+      "pattern": "^did:"
+    },
+    "validFrom": {
+      "type": "string",
+      "minLength": 10
+    },
+    "credentialSubject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "claim",
+        "cycle",
+        "evidencePointer",
+        "selfDeliberation",
+        "supersedes"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^did:"
+        },
+        "claim": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cycle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidencePointer": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "trace"
+          ],
+          "properties": {
+            "trace": {
+              "type": "string",
+              "minLength": 1
+            },
+            "irisNoun": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sdg": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^\\d{1,2}(\\.[0-9a-z]{1,2})?$"
+              }
+            }
+          }
+        },
+        "selfDeliberation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "position",
+            "evidence",
+            "counter",
+            "consensus",
+            "dissent"
+          ],
+          "properties": {
+            "position": {
+              "type": "string",
+              "minLength": 1
+            },
+            "evidence": {
+              "type": "string",
+              "minLength": 1
+            },
+            "counter": {
+              "type": "string",
+              "minLength": 1
+            },
+            "consensus": {
+              "type": "string",
+              "minLength": 1
+            },
+            "dissent": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "supersedes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "proof": {
+      "type": "object",
+      "required": [
+        "type",
+        "verificationMethod",
+        "proofValue"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cryptosuite": {
+          "type": "string",
+          "minLength": 1
+        },
+        "verificationMethod": {
+          "type": "string",
+          "pattern": "^did:"
+        },
+        "proofPurpose": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created": {
+          "type": "string",
+          "minLength": 1
+        },
+        "proofValue": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "envelope": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "presentation": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "complements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "assessments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "lofl": {
+      "$ref": "envelope.schema.json"
+    }
+  }
+}

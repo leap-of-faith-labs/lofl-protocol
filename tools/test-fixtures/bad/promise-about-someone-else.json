@@ -1,0 +1,51 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "LOFLPromise"
+  ],
+  "id": "urn:uuid:00000000-0000-4000-8000-000000000001",
+  "issuer": "did:key:z6MkSYNTHETICtestOnly000000000000000000000000",
+  "validFrom": "2026-10-24T18:00:00+05:30",
+  "credentialSubject": {
+    "id": "did:key:z6MkSYNTHETICwitness0000000000000000000000000",
+    "claim": "SYNTHETIC: I will publish the protocol before showing the one-pager.",
+    "cycle": "2026-Q4",
+    "evidencePointer": {
+      "trace": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "irisNoun": "Organisations with improved practice documentation",
+      "sdg": [
+        "17.16",
+        "4.4"
+      ]
+    },
+    "selfDeliberation": {
+      "position": "SYNTHETIC \u2014 test only.",
+      "evidence": "test",
+      "counter": "test",
+      "consensus": "test",
+      "dissent": "Not asked: anyone else. Synthetic record."
+    },
+    "supersedes": null,
+    "rating": "high"
+  },
+  "proof": {
+    "type": "DataIntegrityProof",
+    "cryptosuite": "eddsa-jcs-2022",
+    "verificationMethod": "did:key:z6MkSYNTHETICtestOnly000000000000000000000000#key-1",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "zSYNTHETIC"
+  },
+  "lofl": {
+    "type": "promise",
+    "id": "urn:uuid:00000000-0000-4000-8000-000000000001",
+    "created": "2026-10-24T18:00:00+05:30",
+    "license": "CC-BY-SA-4.0",
+    "provenance": {
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "by": "did:key:z6MkSYNTHETICtestOnly000000000000000000000000"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lofl.world/protocol/schema/deliberation.schema.json",
+  "title": "LOFL deliberation record v0.1",
+  "description": "Licence CC-BY-SA-4.0. Dissent is required and may not be empty.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "lofl",
+    "scale",
+    "position",
+    "evidence",
+    "counter",
+    "consensus",
+    "dissent"
+  ],
+  "properties": {
+    "lofl": {
+      "$ref": "envelope.schema.json"
+    },
+    "scale": {
+      "enum": [
+        "intra-personal",
+        "team",
+        "community"
+      ]
+    },
+    "position": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence": {
+      "type": "string",
+      "minLength": 1
+    },
+    "counter": {
+      "type": "string",
+      "minLength": 1
+    },
+    "consensus": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dissent": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

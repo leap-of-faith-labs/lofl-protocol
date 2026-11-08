@@ -1,0 +1,24 @@
+{
+  "lofl": {
+    "type": "evidence",
+    "id": "urn:uuid:00000000-0000-4000-8000-000000000002",
+    "created": "2026-10-24T18:00:00+05:30",
+    "license": "CC-BY-SA-4.0",
+    "provenance": {
+      "sha256": "5ec11e4cfe327ae25b20a5efc116d68001b5cf5808cdf49ef67b466cc2e56e03",
+      "by": "did:key:z6MkSYNTHETICtestOnly000000000000000000000000"
+    }
+  },
+  "activity": "SYNTHETIC: ran a session.",
+  "evidence": {
+    "kind": "log",
+    "pointer": "private",
+    "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  "verification": {
+    "level": "L1",
+    "by": "did:key:z6MkSYNTHETICwitness0000000000000000000000000",
+    "promiseId": "urn:uuid:00000000-0000-4000-8000-000000000003"
+  },
+  "regeneration": "Keep the 15-minute format."
+}

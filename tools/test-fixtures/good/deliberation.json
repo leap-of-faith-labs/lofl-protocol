@@ -1,0 +1,18 @@
+{
+  "lofl": {
+    "type": "deliberation",
+    "id": "urn:uuid:00000000-0000-4000-8000-000000000004",
+    "created": "2026-10-24T18:00:00+05:30",
+    "license": "CC-BY-SA-4.0",
+    "provenance": {
+      "sha256": "5cc184666366df606636686bc540d20572033aefc02a8221020b93a5dd5e1e9e",
+      "by": "did:key:z6MkSYNTHETICtestOnly000000000000000000000000"
+    }
+  },
+  "scale": "intra-personal",
+  "position": "SYNTHETIC — test only.",
+  "evidence": "test",
+  "counter": "test",
+  "consensus": "test",
+  "dissent": "Not asked: anyone else. Synthetic record."
+}
